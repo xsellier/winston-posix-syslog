@@ -1,10 +1,10 @@
-var path = require('path')
-  , vows = require('vows')
-  , assert = require('assert')
-  , winston = require('winston')
-  , helpers = require('winston/test/helpers')
-  , PosixSyslog = require('../lib/winston-posix-syslog').PosixSyslog
-  , npmTransport = new (PosixSyslog)()
+var path                 = require('path')
+  , vows                 = require('vows')
+  , assert               = require('assert')
+  , winston              = require('winston')
+  , helpers              = require('winston/test/helpers')
+  , PosixSyslog          = require('../lib/winston-posix-syslog').PosixSyslog
+  , npmTransport         = new (PosixSyslog)()
   , posixSyslogTransport = new (PosixSyslog)({ levels: winston.config.syslog.levels })
   ;
 

@@ -7,8 +7,8 @@ A Syslog transport for [winston][0] using posix.
 ### Installing winston-syslog
 
 ``` bash
-  $ npm install winston
-  $ npm install winston-posix-syslog
+  $ npm install winston --save
+  $ npm install winston-posix-syslog --save
 ```
 
 ## Motivation
@@ -20,9 +20,9 @@ To use the PosixSyslog transport in [winston][0], you simply need to require it 
 
 ``` js
   var winston = require('winston');
-  var PosixSyslog = require('winston-posix-syslog').PosixSyslog;
+  require('winston-posix-syslog');
 
-  winston.add(PosixSyslog, options);
+  winston.add(winston.transports.PosixSyslog, options);
 
   winston.log('info', 'I AM the one who knocks.');
 ```

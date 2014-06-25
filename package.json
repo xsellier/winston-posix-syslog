@@ -1,11 +1,8 @@
 {
   "name": "winston-posix-syslog",
-  "description": "A syslog transport for winston that uses posix",
-  "version": "0.0.7",
-  "author": {
-    "name": "Anton Nguyen",
-    "email": "anton@freshbooks.com"
-  },
+  "description": "An awesome syslog transport for winston that uses posix",
+  "version": "0.0.8",
+  "author": "Anton Nguyen <anton@freshbooks.com>",
   "preferGlobal": false,
   "dependencies": {
     "util": "0.4.x",
@@ -15,12 +12,28 @@
   "devDependencies": {
     "vows": "0.7.x"
   },
-  "repository" : {
-      "type": "git",
-      "url": "https://github.com/AntonNguyen/winston-posix-syslog.git"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AntonNguyen/winston-posix-syslog.git"
   },
   "main": "./lib/winston-posix-syslog",
   "engines": {
     "node": ">= 0.4.0"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/AntonNguyen/winston-posix-syslog/issues"
+  },
+  "homepage": "https://github.com/AntonNguyen/winston-posix-syslog",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "vows test/*.js"
+  },
+  "keywords": [
+    "winston",
+    "syslog",
+    "posix"
+  ],
+  "license": "ISC"
 }
